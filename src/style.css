@@ -14,6 +14,7 @@
     --light: #F9f9f9;
     --dm-sans: 'DM Sans', sans-serif;
     --ibm: 'IBM Plex Mono', monospace;
+    --josefin: 'Josefin Sans', sans-serif;
 }
 
 body {
@@ -21,8 +22,8 @@ body {
 }
 
 .container {
-    width: 90%;
-    max-width: 1920px;
+    width: 100%;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -31,17 +32,22 @@ body {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    margin-top: 63px;
-    margin-bottom: 105px;
+    padding-top: 63px;
+    padding-bottom: 105px;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
 }
 
 .logo {
     color: var(--light);
     font-size: 2rem;
+    font-family: var(--josefin);
+    font-weight: 700;
     text-decoration: none;
     text-transform: uppercase;
-    display: flex;
-    gap: 8px;
 }
 
 .menu {
@@ -53,7 +59,7 @@ body {
 
 .menu-git a {
     color: var(--light);
-    font-size: 17px;
+    font-size: 1.06rem;
     font-family: var(--dm-sans);
     font-weight: 700;
     text-decoration: none;
@@ -62,7 +68,7 @@ body {
 
 .menu-comunidade a {
     color: var(--light);
-    font-size: 15px;
+    font-size: 0.93rem;
     font-family: var(--dm-sans);
     font-weight: 700;
     text-decoration: none;
@@ -74,7 +80,7 @@ body {
 
 main span {
     color: var(--green);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: var(--ibm);
     font-weight: 700;
     text-transform: uppercase;
@@ -83,7 +89,7 @@ main span {
 
 main h1 {
     color: var(--light);
-    font-size: 64px;
+    font-size: 4rem;
     font-family: var(--ibm);
     font-weight: 600;
     max-width: 21ch;
@@ -92,7 +98,7 @@ main h1 {
 
 main p {
     color: var(--gray);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: var(--dm-sans);
     font-weight: 500;
     max-width: 46ch;
@@ -123,7 +129,7 @@ main p {
 
 .projeto-item h2 {
     color: var(--light);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: var(--ibm);
     font-weight: 500;
     margin-bottom: 22px;
@@ -131,7 +137,7 @@ main p {
 
 .projeto-item p {
     color: var(--gray); 
-    font-size: 18px;
+    font-size: 1.12rem;
     font-family: var(--dm-sans);
     font-weight: 500;
     margin-bottom: 48px;
@@ -146,7 +152,7 @@ main p {
 
 .btn-demo {
     color: var(--dark);
-    font-size: 15px;
+    font-size: 0.93rem;
     font-family: var(--dm-sans);
     font-weight: 700;
     text-transform: uppercase;
@@ -154,13 +160,14 @@ main p {
     background-color: var(--green);
     padding: 11px 20px;
     border-radius: 4px;
-    width: 165px;
+    width: 100%;
+    max-width: 165px;
     text-align: center;
 }
 
 .btn-comunidade {
     color: var(--light);
-    font-size: 15px;
+    font-size: 0.93rem;
     font-family: var(--dm-sans);
     font-weight: 700;
     text-transform: uppercase;
@@ -168,7 +175,8 @@ main p {
     border: 1px solid var(--green);
     padding: 11px 20px;
     border-radius: 4px;
-    width: 165px;
+    width: 100%;
+    max-width: 165px;
     text-align: center;
 }
 
@@ -184,6 +192,6 @@ footer {
     gap: 48px;
     color: var(--gray);
     font-family: var(--ibm);
-    font-size: 18px;
+    font-size: 1.12rem;
     font-weight: 400;
 }
