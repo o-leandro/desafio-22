@@ -22,7 +22,7 @@ body {
 }
 
 .container {
-    width: 100%;
+    width: 95%;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -66,6 +66,10 @@ body {
     text-transform: uppercase;
 }
 
+.menu-git a:hover {
+    color: var(--purple);
+}
+
 .menu-comunidade a {
     color: var(--light);
     font-size: 0.93rem;
@@ -76,6 +80,11 @@ body {
     border: 1px solid var(--purple);
     border-radius: 6px;
     padding: 21px 30px;
+    transition: .3s;
+}
+
+.menu-comunidade a:hover {
+    background-color: var(--purple);
 }
 
 main span {
@@ -163,6 +172,13 @@ main p {
     width: 100%;
     max-width: 165px;
     text-align: center;
+    transition: .3s;
+}
+
+.btn-demo:hover {
+    border: 1px solid var(--green);
+    color: var(--light);
+    background-color: transparent;
 }
 
 .btn-comunidade {
@@ -178,6 +194,12 @@ main p {
     width: 100%;
     max-width: 165px;
     text-align: center;
+    transition: .3s;
+}
+
+.btn-comunidade:hover {
+    color: var(--dark);
+    background-color: var(--green);
 }
 
 footer {
@@ -194,4 +216,37 @@ footer {
     font-family: var(--ibm);
     font-size: 1.12rem;
     font-weight: 400;
+}
+
+@media (max-width: 800px) {
+    .header {
+        padding-bottom: 63px;
+        gap: 40px;
+    }
+
+    .menu {
+        gap: 20px;
+    }
+
+    .menu-comunidade a {
+        padding: 10px;
+    }
+
+    main h1 {
+        font-size: 3rem;
+        margin-bottom: 12px;
+    }
+
+    main p {
+        font-size: 1.3rem;
+        margin-bottom: 50px;
+    }
+
+    .projetos {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-info {
+        gap: 20px;
+    }
 }
